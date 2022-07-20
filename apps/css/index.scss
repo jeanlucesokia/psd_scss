@@ -1,0 +1,14 @@
+$white: #ffffff;
+$yellow: #ffcc01;
+$blue: #96bece;
+body {
+    display: flex;
+    background-color: $white;
+    flex-direction: column;
+    align-items: center;
+}
+.homepage {
+    display: flex;
+    width: 70%;
+    height: 800px;
+}
