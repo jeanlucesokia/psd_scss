@@ -5,11 +5,12 @@ body {
   align-items: center;
   font-family: Montserrat, sans-serif;
   color: #1f373d;
+  margin: 0 50px;
+  padding: 0;
 }
 
 .homepage {
-  display: flex;
-  width: 80%;
+  width: 100%;
   height: 1000px;
 }
 
@@ -69,7 +70,7 @@ body {
 .hero-content {
   display: flex;
   background-color: #ffffff;
-  width: 20%;
+  width: 25%;
 }
 
 .hero-content-column {
@@ -143,6 +144,7 @@ body {
   flex-direction: row;
   height: 40%;
   align-items: center;
+  margin-top: 75px;
 }
 .company .company-row-primary {
   display: flex;
@@ -177,4 +179,40 @@ body {
 .company .company-row-secondary .card .card-content h2 {
   font-weight: bold;
   color: #ffcc01;
+}
+
+.appartement {
+  width: 100%;
+  height: auto;
+  margin-left: 20px;
+  margin-top: 75px;
+  padding-top: 20px;
+}
+.appartement h2 {
+  padding-top: 20px;
+}
+.appartement .appart-container {
+  display: grid;
+  padding-top: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.appartement .appart-container .appart-card-primary {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+.appartement .appart-container .appart-card-primary .appart-card-items-img {
+  height: 340px;
+  background-color: #96bece;
+  margin-bottom: 20px;
+  border-radius: 10px 10px 0 0;
+}
+.appartement .appart-container .appart-card-primary .appart-card-items-info {
+  padding: 15px;
+  font-weight: 700;
+}
+.appartement .appart-container .appart-card-primary .appart-card-items-info span {
+  font-size: 15px;
 }/*# sourceMappingURL=index.css.map */
