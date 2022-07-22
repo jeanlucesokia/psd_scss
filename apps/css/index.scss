@@ -206,12 +206,12 @@ body {
 
 //appartement
 
-.appartement {
+#appartement {
     width: 100%;
     height: auto;
-    margin-left: 20px;
+    padding-left: 20px;
     margin-top: 75px;
-    //background-color: #f6f5f4;
+    background-color: #f6f5f4;
     padding-top: 20px;
 
 
@@ -224,27 +224,50 @@ body {
         padding-top: 30px;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+        align-content: center;
 
         .appart-card-primary {
             width: 300px;
             height: 450px;
-
             border-radius: 10px;
             box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
 
             .appart-card-items-img {
                 height: 340px;
                 background-color: $blue;
-                margin-bottom: 20px;
+                //margin-bottom: 20px;
                 border-radius: 10px 10px 0 0;
             }
 
             .appart-card-items-info {
                 padding: 15px;
                 font-weight: 700;
+                margin-top: 15px;
 
                 span {
                     font-size: 15px;
+                }
+
+                .appart-card-items-info-composite {
+                    display: inline;
+
+                    .appart-card-items-info-composite-price {
+                        position: relative;
+                        float: left;
+                        margin-top: 20px;
+                        color: $yellow;
+                    }
+
+                    .appart-card-items-info-composite-shape {
+                        position: relative;
+                        float: right;
+                        margin-top: 20px;
+
+                        span {
+                            padding: 0 10px;
+                            font-weight: lighter;
+                        }
+                    }
                 }
             }
         }
