@@ -184,10 +184,9 @@ body {
 #appartement {
   width: 100%;
   height: auto;
-  padding-left: 20px;
   margin-top: 75px;
   background-color: #f6f5f4;
-  padding-top: 20px;
+  padding: 20px 0 75px 20px;
 }
 #appartement h2 {
   padding-top: 20px;
@@ -233,6 +232,60 @@ body {
   margin-top: 20px;
 }
 #appartement .appart-container .appart-card-primary .appart-card-items-info .appart-card-items-info-composite .appart-card-items-info-composite-shape span {
+  padding: 0 10px;
+  font-weight: lighter;
+}
+
+#agents {
+  width: 100%;
+  height: auto;
+  padding: 20px 0 75px 20px;
+}
+#agents h2 {
+  padding-top: 20px;
+}
+#agents .agent-container {
+  display: grid;
+  padding-top: 30px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  align-content: center;
+}
+#agents .agent-container .agent-card-primary {
+  width: 300px;
+  height: 450px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+}
+#agents .agent-container .agent-card-primary .agent-card-items-img {
+  height: 340px;
+  background-color: #ccc;
+  border-radius: 10px 10px 0 0;
+}
+#agents .agent-container .agent-card-primary .agent-card-items-info {
+  padding: 15px;
+  font-weight: 700;
+  margin-top: 15px;
+}
+#agents .agent-container .agent-card-primary .agent-card-items-info span {
+  display: inline-block;
+  font-size: 15px;
+}
+#agents .agent-container .agent-card-primary .agent-card-items-info .agent-card-items-info-composite {
+  display: block;
+}
+#agents .agent-container .agent-card-primary .agent-card-items-info .agent-card-items-info-composite .agent-card-items-info-composite-name {
+  position: relative;
+  float: left;
+  margin-top: 20px;
+  color: #ffcc01;
+}
+#agents .agent-container .agent-card-primary .agent-card-items-info .agent-card-items-info-composite .agent-card-items-info-composite-rs {
+  position: relative;
+  float: right;
+  margin-top: 20px;
+}
+#agents .agent-container .agent-card-primary .agent-card-items-info .agent-card-items-info-composite .agent-card-items-info-composite-rs span {
   padding: 0 10px;
   font-weight: lighter;
 }/*# sourceMappingURL=index.css.map */

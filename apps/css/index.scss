@@ -209,10 +209,9 @@ body {
 #appartement {
     width: 100%;
     height: auto;
-    padding-left: 20px;
     margin-top: 75px;
     background-color: #f6f5f4;
-    padding-top: 20px;
+    padding: 20px 0 75px 20px;
 
 
     h2 {
@@ -235,7 +234,6 @@ body {
             .appart-card-items-img {
                 height: 340px;
                 background-color: $blue;
-                //margin-bottom: 20px;
                 border-radius: 10px 10px 0 0;
             }
 
@@ -272,5 +270,75 @@ body {
             }
         }
 
+    }
+}
+
+
+
+//Section Agents
+
+#agents {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 75px 20px;
+
+    h2 {
+        padding-top: 20px;
+    }
+
+    p {}
+
+    .agent-container {
+        display: grid;
+        padding-top: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-content: center;
+
+        .agent-card-primary {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+
+            .agent-card-items-img {
+                height: 340px;
+                background-color: #ccc;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .agent-card-items-info {
+                padding: 15px;
+                font-weight: 700;
+                margin-top: 15px;
+
+                span {
+                    display: inline-block;
+                    font-size: 15px;
+                }
+
+                .agent-card-items-info-composite {
+                    display: block;
+
+                    .agent-card-items-info-composite-name {
+                        position: relative;
+                        float: left;
+                        margin-top: 20px;
+                        color: $yellow;
+                    }
+
+                    .agent-card-items-info-composite-rs {
+                        position: relative;
+                        float: right;
+                        margin-top: 20px;
+
+                        span {
+                            padding: 0 10px;
+                            font-weight: lighter;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
