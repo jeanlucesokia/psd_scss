@@ -2,9 +2,11 @@ $white: #ffffff;
 $yellow: #ffcc01;
 $blue: #96bece;
 $black: #000000;
-$app_width: 80%;
-$montserrat: Montserrat,sans-serif;
+$app_width: 100%;
+$montserrat: Montserrat, sans-serif;
 $text_color_global : #1f373d;
+
+
 body {
     display: flex;
     background-color: $white;
@@ -12,14 +14,19 @@ body {
     align-items: center;
     font-family: $montserrat;
     color: $text_color_global;
+    margin: 0;
+    padding: 0;
 }
+
 .homepage {
     width: $app_width;
     height: 1000px;
 }
+
 .navbar {
     width: 100%;
 }
+
 .navbar-row {
     display: flex;
     flex-direction: row;
@@ -27,20 +34,24 @@ body {
     margin-left: 2px;
     list-style: none;
 }
+
 .navbar-row {
     text-align: center;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
+    //margin-left: 20px;
+    //margin-right: 20px;
 }
+
 .navbar-row-logo {
     display: flex;
     width: 150px;
     height: 50px;
 }
+
 .navbar-row-btn {
     margin-left: 10%;
 }
+
 .navbar-row-btn button {
     text-align: center;
     background-color: transparent;
@@ -50,11 +61,18 @@ body {
     padding: 14px 16px;
     font-size: 14px;
 }
+
 .navbar-row-btn button:hover {
     background-color: $yellow;
     border-radius: 8px;
     cursor: pointer;
 }
+
+.content-wrapper {
+    max-width: 970px;
+    margin: auto;
+}
+
 .hero {
     display: flex;
     position: relative;
@@ -62,23 +80,28 @@ body {
     width: 100%;
     height: 500px;
 }
-.hero-content{
+
+.hero-content {
     display: flex;
     background-color: $white;
     width: $app_width/4;
 }
+
 .hero-content-column {
     position: absolute;
     margin-top: 10%;
     margin-left: 8%;
+
     h1 {
         font-weight: bold;
         font-size: 50px;
     }
+
     .hero-content-row {
         display: flex;
         flex-direction: row;
         height: 50px;
+
         i {
             display: flex;
             align-items: center;
@@ -86,11 +109,13 @@ body {
             top: 40px;
             color: gray;
         }
+
         input {
             border: none;
             outline: none;
             width: 280px;
         }
+
         button {
             cursor: pointer;
             background-color: $yellow;
@@ -104,20 +129,24 @@ body {
         }
     }
 }
+
 .hero-footer {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
     width: 100%;
-    .hero-footer-info{
+
+    .hero-footer-info {
         display: flex;
         background-color: $yellow;
+
         i {
             align-items: center;
             margin-left: 20px;
             color: $white
         }
+
         button {
             cursor: pointer;
             background-color: transparent;
@@ -130,43 +159,190 @@ body {
             color: $text_color_global;
         }
     }
-    
+
 }
+
 .company {
     display: flex;
     flex-direction: row;
     height: 40%;
     align-items: center;
+    margin-top: 75px;
+
     .company-row-primary {
         display: flex;
         flex-direction: column;
         text-align: justify;
-        align-items:flex-start;
+        align-items: flex-start;
         margin-left: 2%;
         margin-right: 2%;
         flex-wrap: wrap;
         width: 50%;
     }
+
     .company-row-secondary {
         display: flex;
         flex-direction: column;
         align-items: center;
         flex-wrap: wrap;
         width: 50%;
+
         .card {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             text-align: center;
+
             .card-content {
                 width: 140px;
                 margin-left: 10px;
                 margin-right: 10px;
                 margin-top: 20px;
                 background-color: #f6f5f4;
-                h2{
+
+                h2 {
                     font-weight: bold;
                     color: $yellow;
+                }
+            }
+        }
+    }
+}
+
+//appartement
+
+#appartement {
+    width: 100%;
+    height: auto;
+    margin-top: 75px;
+    background-color: #f6f5f4;
+    padding: 20px 0 75px 0;
+
+    h2 {
+        padding-top: 20px;
+    }
+
+    .appart-container {
+        display: grid;
+        padding-top: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-content: center;
+
+        .appart-card-primary {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+
+            .appart-card-items-img {
+                height: 340px;
+                background-color: $blue;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .appart-card-items-info {
+                padding: 15px;
+                font-weight: 700;
+                margin-top: 15px;
+
+                span {
+                    font-size: 15px;
+                }
+
+                .appart-card-items-info-composite {
+                    display: inline;
+
+                    .appart-card-items-info-composite-price {
+                        position: relative;
+                        float: left;
+                        margin-top: 20px;
+                        color: $yellow;
+                    }
+
+                    .appart-card-items-info-composite-shape {
+                        position: relative;
+                        float: right;
+                        margin-top: 20px;
+
+                        span {
+                            padding: 0 10px;
+                            font-weight: lighter;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+
+//Section Agents
+
+#agents {
+    width: 100%;
+    height: auto;
+    padding: 20px 0 75px 0;
+
+    h2 {
+        padding-top: 20px;
+    }
+
+    p {
+        width: 32%;
+    }
+
+    .agent-container {
+        display: grid;
+        padding-top: 30px;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        align-content: center;
+
+        .agent-card-primary {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+
+            .agent-card-items-img {
+                height: 340px;
+                background-color: #ccc;
+                border-radius: 10px 10px 0 0;
+            }
+
+            .agent-card-items-info {
+                padding: 15px;
+                font-weight: 700;
+                margin-top: 15px;
+
+                span {
+                    display: inline-block;
+                    font-size: 15px;
+                }
+
+                .agent-card-items-info-composite {
+                    display: block;
+
+                    .agent-card-items-info-composite-name {
+                        position: relative;
+                        float: left;
+                        margin-top: 20px;
+                        color: $yellow;
+                    }
+
+                    .agent-card-items-info-composite-rs {
+                        position: relative;
+                        float: right;
+                        margin-top: 20px;
+
+                        span {
+                            padding: 0 10px;
+                            font-weight: lighter;
+                        }
+                    }
                 }
             }
         }
